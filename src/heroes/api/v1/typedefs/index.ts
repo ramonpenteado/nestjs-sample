@@ -1,0 +1,7 @@
+export * from './appearance.type'
+export * from './biography.type'
+export * from './connections.type'
+export * from './work.type'
+export * from './powerstats.type'
+export * from './images.type'
+export * from './hero.type'

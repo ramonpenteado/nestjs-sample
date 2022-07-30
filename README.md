@@ -91,3 +91,6 @@ Nest is [MIT licensed](LICENSE).
 ||--- use-cases
 
 ```
+
+## What we want to do?
+### Create a service that retrieves heroes from external services
