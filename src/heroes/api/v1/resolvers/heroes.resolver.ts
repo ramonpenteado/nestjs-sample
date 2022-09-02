@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { HeroesInternalService } from "src/heroes/services";
-import { Hero } from "../typedefs";
+import { Hero, PowerStats } from "../typedefs";
 
 @Injectable()
 export class HeroesResolver {
@@ -13,6 +13,14 @@ export class HeroesResolver {
 
     public async getHeroById(id: number): Promise<Hero> {
         return this.heroService.getHeroById(id)
+    }
+
+    public async getPowerStatsById(id: number): Promise<PowerStats> {
+        return await this.heroService.getPowerStatsById(id)
+    }
+
+    public async getAllPowerStats(): Promise<PowerStats[]> {
+        return await this.heroService.getAllPowerStats()
     }
 
 }
